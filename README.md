@@ -10,17 +10,30 @@ The files themselves can be extremely large.
 Usage:
 
 ./kmercounter --f [filename] --k [k-mer length] --l [output list size] --i [implementation]
+
 a file name following option --f must be specified
 
 default k-mer length is DEFAULT_KMER_LENGTH
+
 default output list size is DEFAULT_OUTPUT_SIZE
+
 default implementation is bf for Bloom Filter
+
 other valid options are:
+
   sm: a two step set map based implementation
+  
   mo: a 1 step map only implementation
+  
 general guidelines for choosing an impelentation:
+
   for any K larger than 15, choose bloom filter unless the input file size is very small (<=50mb)
+  
   for any K smaller than 5, map only implementation is generally better even if the file size is very large
+  
   in between above K values, two step set map implementation pulls ahead
+  
 default Bloom filter size is DEFAULT_BLOOMFILTER_SIZE bits
+
 default number of hash functions is DEFAULT_NUMBER_OF_HASH_FUNCTIONS
+
