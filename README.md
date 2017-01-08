@@ -21,17 +21,17 @@ default implementation is bf for Bloom Filter
 
 other valid options are:
 
-  sm: a two step set map based implementation
-  
-  mo: a 1 step map only implementation
+		sm: a two step set map based implementation
+	
+		mo: a 1 step map only implementation
   
 general guidelines for choosing an impelentation:
 
-  for any K larger than 15, choose bloom filter unless the input file size is very small (<=50mb)
-  
-  for any K smaller than 5, map only implementation is generally better even if the file size is very large
-  
-  in between above K values, two step set map implementation pulls ahead
+		for any K larger than 15, choose bloom filter unless the input file size is very small (<=50mb)
+		
+		for any K smaller than 5, map only implementation is generally better even if the file size is very large
+		
+		in between above K values, two step set map implementation pulls ahead
   
 
 
