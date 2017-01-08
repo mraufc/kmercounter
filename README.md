@@ -13,9 +13,9 @@ Usage:
 
 a file name following option --f must be specified
 
-default k-mer length is DEFAULT_KMER_LENGTH
+default k-mer length is 30
 
-default output list size is DEFAULT_OUTPUT_SIZE
+default output list size is 25
 
 default implementation is bf for Bloom Filter
 
@@ -33,7 +33,5 @@ general guidelines for choosing an impelentation:
   
   in between above K values, two step set map implementation pulls ahead
   
-default Bloom filter size is DEFAULT_BLOOMFILTER_SIZE bits
 
-default number of hash functions is DEFAULT_NUMBER_OF_HASH_FUNCTIONS
 
