@@ -9,7 +9,7 @@ The files themselves can be extremely large.
 
 Usage:
 
-./kmercounter --f [filename] --k [k-mer length] --l [output list size] --i [implementation]
+		./kmercounter --f [filename] --k [k-mer length] --l [output list size] --i [implementation]
 
 a file name following option --f must be specified
 
